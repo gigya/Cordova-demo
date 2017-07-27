@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-gigya"
+        version="1.0.0">
+
+    <name>Gigya</name>
+
+    <engines>
+        <engine name="cordova" version=">=5.4.0"/>
+    </engines>
+
+    <asset src="www/gigyaClient.js" target="js/gigyaClient.js"/>
+
+    <js-module src="www/gigyaClient.js" name="gigyaClient">
+        <clobbers target="gigyaClient"/>
+    </js-module>
+
+    <dependency
+            id="es6-promise-plugin"
+            url="https://github.com/vstirbu/PromisesPlugin.git">
+    </dependency>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="GigyaConnectPlugin">
+                <param name="android-package" value="org.apache.cordova.gigya.ConnectPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ConnectPlugin.java" target-dir="src/org/apache/cordova/gigya"/>
+
+        <source-file src="src/android/libs/gigya-sdk.jar" target-dir="libs"/>
+
+        <config-file target="AndroidManifest.xml" parent="application">
+            <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:name="com.gigya.socialize.android.ui.HostActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+            <activity android:allowTaskReparenting="true" android:launchMode="singleTask" android:name="com.gigya.socialize.android.login.providers.WebLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                    <category android:name="android.intent.category.BROWSABLE"/>
+                    <data android:host="gsapi" android:scheme="$PACKAGE_NAME"/>
+                </intent-filter>
+            </activity>
+        </config-file>
+
+    </platform>
+
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/widget">
+            <feature name="GigyaConnectPlugin">
+                <param name="ios-package" value="GigyaConnectPlugin"/>
+                <param name="onload" value="true"/>
+            </feature>
+            <plugin name="GigyaConnectPlugin" value="GigyaConnectPlugin"/>
+        </config-file>
+
+        <preference name="GOOGLE_IOS_CLIENT_ID" default="NONE"/>
+
+        <config-file target="*-Info.plist" parent="GoogleClientID">
+            <string>$GOOGLE_IOS_CLIENT_ID</string>
+        </config-file>
+
+        <header-file src="src/ios/GigyaConnectPlugin.h"/>
+        <source-file src="src/ios/GigyaConnectPlugin.m"/>
+
+        <framework src="src/ios/libs/GigyaSDK.framework" custom="true"/>
+
+        <framework src="Social.framework" weak="true"/>
+        <framework src="Accounts.framework" weak="true"/>
+
+    </platform>
+
+</plugin>

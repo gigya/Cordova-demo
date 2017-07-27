@@ -1,0 +1,77 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+        "spec": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+        "type": "directory"
+      },
+      "/Users/victornavarro/Desktop/cordova-test/GigyaCordova/node_modules"
+    ]
+  ],
+  "_from": "../../../Downloads/cordova-plugin-gigya-master",
+  "_id": "cordova-test@1.0.0",
+  "_inCache": true,
+  "_location": "/cordova-test",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+    "spec": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../../../Downloads/cordova-plugin-gigya-master",
+  "_shasum": "a7a6c308190f05a7cf8cf1f210a8e94700356224",
+  "_shrinkwrap": null,
+  "_spec": "/Users/victornavarro/Downloads/cordova-plugin-gigya-master",
+  "_where": "/Users/victornavarro/Desktop/cordova-test/GigyaCordova/node_modules",
+  "author": {
+    "name": "Gigya"
+  },
+  "bugs": {
+    "url": "https://github.com/gigya/cordova-plugin-gigya/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-gigya",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Gigya SDK for CordovaJS =================================== The CordovaJS SDK provides an interface for the Gigya API",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=5.4.0"
+    }
+  ],
+  "homepage": "https://github.com/gigya/cordova-plugin-gigya#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "ISC",
+  "name": "cordova-test",
+  "optionalDependencies": {},
+  "readme": "Gigya SDK for CordovaJS\n===================================\nThe CordovaJS SDK provides an interface for the Gigya API\n\nLearn more: http://developers.gigya.com/display/GD/Cordova",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigya/cordova-plugin-gigya.git"
+  },
+  "version": "1.0.0"
+}

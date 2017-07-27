@@ -1,0 +1,49 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-gigya": {
+        "source": {
+            "type": "local",
+            "path": "/Users/victornavarro/Desktop/cordova-test/GigyaCordova/node_modules/cordova-test"
+        },
+        "is_top_level": true,
+        "variables": {
+            "GOOGLE_IOS_CLIENT_ID": "883545813749-fohgj471c9l8ufukasio1b87jqfgtvps.apps.googleusercontent.com"
+        }
+    },
+    "es6-promise-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/vstirbu/PromisesPlugin.git"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-facebook4": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/gigya/cordova-plugin-facebook4"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "626108487583023",
+            "APP_NAME": "Gigya test App"
+        }
+    },
+    "cordova-plugin-googleplus": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/gigya/cordova-plugin-googleplus"
+        },
+        "is_top_level": true,
+        "variables": {
+            "REVERSED_CLIENT_ID": "com.googleusercontent.apps.10464331611-auvpsaiih61j8r5m8u52bvv37ro2m115"
+        }
+    }
+}
